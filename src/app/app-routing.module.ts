@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
+import { AcercaComponent } from './pages/acerca/acerca.component';
+import { ContactoComponent } from './pages/contacto/contacto.component';
 
 const rutas:Routes=[
   {
-    path:"inicio",
+    path:"home",
     component:HomeComponent
   },
   {
@@ -16,11 +17,14 @@ const rutas:Routes=[
     path:"contacto",
     component:ContactoComponent
   }
-]
+]     
 
 @NgModule({
-  declarations: [],
   imports: [
+    RouterModule.forRoot(rutas)
+  ],
+  exports: 
+  [
     RouterModule
   ]
 })
