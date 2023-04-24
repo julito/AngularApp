@@ -6,15 +6,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/home">Tienda</a>
+          <li *ngFor="let item of rutas" class="nav-item">
+            <a class="nav-link" [routerLink]="item.direccion">{{item.titulo}}</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/acerca">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/contacto">Contáctanos</a>
-          </li>
+          
 
           <!-- En lugar de hacer tres "nav-links", sería utilizar "ngFor", pero en mi codigo no funciona. -->
 
