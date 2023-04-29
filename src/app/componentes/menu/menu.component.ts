@@ -16,7 +16,7 @@ export class MenuComponent {
         direccion:'/acerca'
       },
       {
-        titulo:'contáctenos',
+        titulo:'Contáctanos',
         direccion:'/contacto'
       }
     ]
