@@ -1,19 +1,4 @@
 <app-menu></app-menu>
+<app-home></app-home>
 <router-outlet></router-outlet>
 
-<section>
-    <div *ngFor="let persona of personas" class="col-sm-6 mb-3 mb-sm-0">
-        <div class="container">
-            <div class="row">
-                <div class="card" style="width: 18rem;">
-                    <img src={{persona.imagen}} class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">{{persona.titulo}}</h5>
-                        <p class="card-text">{{persona.descripcion}}</p>
-                        <a href="/personas/{{persona.id}}" class="btn btn-primary">Ver</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
