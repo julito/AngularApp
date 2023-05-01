@@ -1,0 +1,23 @@
+<?php
+
+header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
+header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE');
+header('Content-Type: application/json; charset=utf-8');
+
+$datos=array(
+    array(
+        'id'=>1,
+        'imagen'=>'https://pbs.twimg.com/profile_images/1401414204893155331/Mga13R1H_400x400.jpg',
+        'titulo'=>'Chirri',
+        'descripción'=>'ParapamParapam'
+    ),
+    array(
+        'id'=>2,
+        'imagen'=>'https://i.pinimg.com/236x/64/1b/02/641b029e580fa71b0a081f26a081c8a4.jpg',
+        'titulo'=>'Lui',
+        'descripcion'=>'TrikikiTrikiki'
+    )
+);
+
+echo json_encode($datos);

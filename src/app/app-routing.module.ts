@@ -16,6 +16,10 @@ const rutas:Routes=[
   {
     path:"contacto",
     component:ContactoComponent
+  },
+  {
+    path:"#",
+    component:ContactoComponent
   }
 ]     
 

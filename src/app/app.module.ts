@@ -15,7 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
     HomeComponent,
     AcercaComponent,
     ContactoComponent,
-    MenuComponent
+    MenuComponent,
   ],
   imports: [
     AppRoutingModule,
