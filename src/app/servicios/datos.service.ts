@@ -8,8 +8,12 @@ export class DatosService {
 
   constructor(private http: HttpClient) { }
 
-  getDatos()
+  getPersonas()
   {
-    return this.http.get("http://localhost/datos/");
+    return this.http.get("http://localhost/datos/personas");
+  }
+  getServicios()
+  {
+    return this.http.get("http://localhost/datos/servicios");
   }
 }

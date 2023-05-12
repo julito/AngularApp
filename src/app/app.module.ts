@@ -8,6 +8,7 @@ import { AcercaComponent } from './pages/acerca/acerca.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { MenuComponent } from './componentes/menu/menu.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ServisComponent } from './pages/servis/servis.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
     AcercaComponent,
     ContactoComponent,
     MenuComponent,
+    ServisComponent,
   ],
   imports: [
     AppRoutingModule,

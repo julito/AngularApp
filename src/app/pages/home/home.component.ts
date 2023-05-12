@@ -10,7 +10,7 @@ export class HomeComponent {
   public personas: any[]=[]
   constructor(private servicio: DatosService){}
   ngOnInit(){
-      this.servicio.getDatos()
+      this.servicio.getPersonas()
       .subscribe((data:any)=>{
           this.personas=data;
       })

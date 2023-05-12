@@ -3,23 +3,28 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { AcercaComponent } from './pages/acerca/acerca.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
+import { ServisComponent } from './pages/servis/servis.component';
 
 const rutas:Routes=[
   {
-    path:"home",
+    path:'home',
     component:HomeComponent
   },
   {
-    path:"acerca",
+    path:'acerca',
     component:AcercaComponent
   },
   {
-    path:"contacto",
+    path:'contacto',
     component:ContactoComponent
   },
   {
-    path:"#",
-    component:ContactoComponent
+    path:'servis',
+    component:ServisComponent
+  },
+  {
+    path:'**',
+    redirectTo:'inicio'
   }
 ]     
 
