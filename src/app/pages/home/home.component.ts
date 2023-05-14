@@ -12,7 +12,7 @@ export class HomeComponent {
   ngOnInit(){
       this.servicio.getPersonas()
       .subscribe((data:any)=>{
-          this.personas=data;
+          this.personas=data;      
       })
   }
 }

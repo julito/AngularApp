@@ -13,6 +13,7 @@ export class ServisComponent {
       this.servicio.getServicios()
       .subscribe((data:any)=>{
           this.services=data;
+          console.log(data);
       })
   }
 }
