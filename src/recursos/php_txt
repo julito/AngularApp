@@ -7,16 +7,19 @@ header('Content-Type: application/json; charset=utf-8');
 
 if(isset($_GET['ruta']))
 {
+   
     $servidor = 'mysql:host=localhost;dbname=datos';
     $usuario = 'root';
     $contraseña = '';
     $tabla = explode("/", $_GET['ruta']);
-
+    
     $pdo = new PDO($servidor, $usuario, $contraseña);
 
     $sql = "SELECT * FROM ".$tabla[0];
     $stmt = $pdo->query($sql);
+   
     $resultados = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    
 }
 else
 $resultados = array();
