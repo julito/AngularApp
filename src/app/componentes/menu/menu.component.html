@@ -8,16 +8,11 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li *ngFor="let item of rutas" class="nav-item">
 
-
-            <a class="nav-link" routerLink="{{item.direccion}}">{{item.titulo}}</a>
+            <a class="nav-link" [routerLink]="item.direccion">{{item.titulo}}</a>
           </li>
           
 
-         
-
-
-            <a class="nav-link" [routerLink]="item.direccion">{{item.titulo}}</a>
-          </li>
+          
 
         </ul>
       </div>
