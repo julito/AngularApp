@@ -8,16 +8,20 @@ import { Component } from '@angular/core';
 export class MenuComponent {
     rutas=[
       {
-          titulo:'Tienda',
-          direccion:'/home'
+        titulo:'Tienda',
+        direccion:'/home'
       },
       {
         titulo:'Nosotros',
         direccion:'/acerca'
       },
       {
-        titulo:'contáctenos',
+        titulo:'Contáctanos',
         direccion:'/contacto'
+      },
+      {
+        titulo:'Servicios',
+        direccion:'/servis'
       }
     ]
 }
